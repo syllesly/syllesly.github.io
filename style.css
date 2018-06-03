@@ -1,8 +1,9 @@
+--cursor-type:default;
 body {
     background-color: rgb(0,0,0);
 }
 html {
-    --cursor-type:default;
+    
     cursor:var(--cursor-type);
     
 }
