@@ -3,3 +3,6 @@
   border: none;
   color:rgb(255,255,255);
 }
+.clickButton:active {
+  background-color: rgb(0,100,0);
+}
