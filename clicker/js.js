@@ -11,6 +11,7 @@ function klik() {
   startup();
 }
 function buycpc() {
+  
   if(clicks>=cost) {
     clicks-=cost;
     cost = Math.round(Math.pow(cost,1.2));
