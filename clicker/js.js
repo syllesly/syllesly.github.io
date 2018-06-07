@@ -12,7 +12,7 @@ function klik() {
 function buycpc() {
   if(clicks>=cost) {
     clicks-=cost;
-    cost = Math.pow(cost,1.1);
+    cost = Math.round(Math.pow(cost,1.1));
     cpc++;
   }
   document.getElementById("buy").innerHTML = "Buy clicks per click  "+cost+"clicks";
