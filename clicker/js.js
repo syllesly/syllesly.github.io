@@ -1,5 +1,5 @@
 var clicks=0;
-function click() {
+function klik() {
   clicks++;
   document.getElementById("id").innerHTML = "CLICKS = "+clicks;
 }
