@@ -13,7 +13,7 @@ function klik() {
 function buycpc() {
   if(clicks>=cost) {
     clicks-=cost;
-    cost = Math.round(Math.pow(cost,1.5));
+    cost = Math.round(Math.pow(cost,1.2));
     cpc++;
   }
   startup();
