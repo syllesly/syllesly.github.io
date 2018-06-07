@@ -3,11 +3,11 @@ var cpc=1;
 var cost=10;
 function startup() {
   document.getElementById("clicks").innerHTML = "Clicks = "+clicks;
-  document.getElementById("buy").innerHTML = "Buy clicks per click  "+cost+"clicks";
+  document.getElementById("buy").innerHTML = "Buy clicks per click  "+cost+" clicks";
 }
 function klik() {
   clicks+=cpc;
-  document.getElementById("clicks").innerHTML = "Clicks = "+clicks;
+  startup();
 }
 function buycpc() {
   if(clicks>=cost) {
@@ -15,5 +15,5 @@ function buycpc() {
     cost = Math.round(Math.pow(cost,1.1));
     cpc++;
   }
-  document.getElementById("buy").innerHTML = "Buy clicks per click  "+cost+"clicks";
+  startup();
 }
