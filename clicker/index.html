@@ -5,6 +5,13 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="js.js"></script>
   </head>
+  <script>
+var clicks=0;
+function click() {
+  clicks++;
+  document.getElementById("id").innerHTML = "CLICKS = "+clicks;
+}
+</script>
   <body>
     <div id="id"></div>
     <button class="clickButton" onclick="click()">CLICK</button>
