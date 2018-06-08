@@ -1,10 +1,18 @@
-var clicks=0;
-var cpc=1;
-var cost=10;
+var clicks=localStorage.getItem('clicks');;
+var cpc=localStorage.getItem('cpc');;
+var cost=localStorage.getItem('cost');;
 function startup() {
+  if(clicks==null) {
+    clicks=0;
+    cpc=1;
+    cost=10;
+  }
   write( "Clicks = "+clicks,"clicks");
   document.getElementById("buy").innerHTML = "Price = "+cost+" clicks";
   document.getElementById("cpc").innerHTML = "Clicks per click = "+cpc;
+  localStorage.setItem('clicks', clicks);
+  localStorage.setItem('cpc', cpc);
+  localStorage.setItem('cost', cost);
 }
 function klik() {
   clicks+=cpc;
