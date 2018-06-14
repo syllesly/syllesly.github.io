@@ -13,3 +13,6 @@ function draw() {
     ellipse(sin(t+i)*height/30+mouseX,cos(t+i)*height/30+mouseY,height/60,height/60);
   }
 }
+function windowResized() {
+  resizeCanvas(window.innerWidth, window.innerHeight);
+}
