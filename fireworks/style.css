@@ -1,0 +1,10 @@
+.t {
+    cursor: default;
+    font-size: xx-large;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:rgb(255,255,255);
+    text-shadow: 3px 3px 8px;
+}
