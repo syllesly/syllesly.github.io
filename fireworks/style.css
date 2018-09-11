@@ -15,7 +15,7 @@
     left: 50%;
     top: 80%;
     transform: translate(-50%, -50%);
-    box-shadow: 7px 7px 8px;
+    box-shadow: 7px 7px 8px rgb(0,255,0);
     transform: translate(-7px, 7px);
 }
 .projects:hover {
@@ -23,6 +23,6 @@
 }
 
 .projects:active {
-    box-shadow: 2px 2px 8px:
+    box-shadow: 2px 2px 8px rgb(0,170,0):
     transform: translate(5px, 5px);
 }
