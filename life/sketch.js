@@ -37,6 +37,6 @@ function draw() {
 }
 function keyPressed() {
   if(key=="s") {
-		show=!show;
+	show=!show;
   }
 }
