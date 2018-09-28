@@ -7,10 +7,10 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
   noStroke();
   speedSlider=createSlider(0,20,15);
-  for (var x = 0; x < width / 5; x++) {
+  for (var x = 0; x < width / 10; x++) {
     lifes[x] = [];
     oldLifes[x] = [];
-    for (var y = 0; y < height / 5; y++) {
+    for (var y = 0; y < height / 10; y++) {
       if(random(0,1)<0.1) {
         lifes[x][y]=true;
       }else{
