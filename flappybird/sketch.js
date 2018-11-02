@@ -1,6 +1,7 @@
 var bird;
 var nrPipes=2;
 var pipes=[];
+var c=true;
 function setup() {
 	createCanvas(600, 400);
 	bird=new Bird();
@@ -55,7 +56,12 @@ function Bird() {
 	}
 	this.jump=() => {
 		if(mouseIsPressed && this.alive) {
-			this.vel=-3;
+			if(c){
+				this.vel=-3;
+				c=false;
+			}
+		}else{
+			c=true;
 		}
 	}
 	var n=this;
