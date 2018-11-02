@@ -147,4 +147,4 @@ function collis(X1,Y1,X2,Y2,W,H) {
 		s=0;
 	}
 	return s;
-}
+} 
