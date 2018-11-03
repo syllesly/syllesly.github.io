@@ -179,7 +179,7 @@ function startUp() {
 	maxEnergy=100;
 	energy=maxEnergy;
 	energyReg=0.5;
-	energyUse=30;
+	energyUse=40;
 	c=true;
 	textAlign(CENTER, CENTER);
 	bird=new Bird();
