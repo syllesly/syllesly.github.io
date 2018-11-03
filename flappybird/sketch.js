@@ -55,7 +55,7 @@ function Bird() {
 		ellipse(this.x,this.y,this.rad*2);
 	}
 	this.jump=() => {
-		if(mouseIsPressed && this.alive) {
+		if((mouseIsPressed || (keyIsPressed && key==" ")) && this.alive) {
 			if(c){
 				this.vel=-3;
 				c=false;
