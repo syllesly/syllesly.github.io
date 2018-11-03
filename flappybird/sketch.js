@@ -33,7 +33,7 @@ function draw() {
 	if(!bird.alive) {
 		fill(100);
 		textSize(70);
-		text('YOU ARE DEAD',width/2,height/2);
+		text('GAME OVER',width/2,height/2);
 		if(mouseIsPressed || (keyIsPressed && key==" ")) {
 			startUp();
 		}
